@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html> 
+<!DOCTYPE html>
 <!--
   Copyright 2011 Ladies Learning Code.
  
@@ -24,7 +24,7 @@
   <head> 
     <meta charset="utf-8" /> 
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" /> 
-    <title>Mobile Web Workshop - Ladies Learning Code - May 18, 2013</title> 
+    <title>Mobile Web Workshop - Ladies Learning Code - April 26, 2014</title>
    	<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Podkova' rel='stylesheet' type='text/css'> 
     <link id="prettify-link" href="src/prettify/prettify.css" rel="stylesheet" disabled /> 
@@ -33,7 +33,7 @@
     <link href="css/common.css" rel="stylesheet" media="screen" /> 
   </head> 
   <body> 
-    <nav id="helpers" style='display:none;'> 
+    <nav id="helpers" style=''>
       <button title="Previous slide" id="nav-prev" class="nav-prev">⇽</button> 
       <button title="Jump to a random slide" id="slide-no">5</button> 
       <button title="Next slide" id="nav-next" class="nav-next">⇾</button> 
@@ -67,7 +67,7 @@
             <h1># LADIES LEARNING CODE</h1>
             <p style='color:#b1009a;font-size:34px'>Introduction Mobile Web (HTML5)</p>
             <p class='with'>Content developed by:</p>
-            <p>Kitty Shum (@kitty_shum on Twitter)
+            <p>Gazheek Morrisseau-Sinclair (@gazheek on Twitter)
             <p>Press <span id="left-init-key" class="key">&rarr;</span> key to advance.</p> 
           </section> 
         </div> 
@@ -96,12 +96,13 @@
         </div> 
     
     <div class='slide exercise' id='setup'>
-      <header><h1>Setup your work area</h1></header>
+      <header><h1>Exercise #1: Setup your work area</h1></header>
       <section>
         <ul>
-          <li>Your smartphone if you have one</li>
-          <li>Text editor - Sublime Text 2 is a good one</li>
-          <li>FTP program: Filezilla, Cyberduck, WinSCP etc.</li>
+          <li>Any devices you might have (i.e. iPad, iPhone, Android, Blackberry...)</li>
+          <li>Download a text editor - <a href="http://www.sublimetext.com/">Sublime Text</a> is a good one</li>
+          <li>Install an FTP - <a href="https://filezilla-project.org/">Filezilla</a>, <a href="http://cyberduck.io/">Cyberduck</a>, etc.</li>
+		  <li>Install Chrome - <a href="https://www.google.com/intl/en_uk/chrome/browser/">Chrome</a></li>
         </ul>
         <h2>Try out the FTP</h2>
         <p>Host: <strong>m.ladieslearningcode.com</strong></p>
@@ -120,31 +121,25 @@
       <header><h1>Why should we spend time designing for mobile devices?</h1></header>
     </div>
     <div class="slide" id="phone-population"> 
-      <header><h1>More mobile phone subscribers than world population</h1></header>
+      <header><h1>Population vs Mobile subscribers</h1></header>
       <section> 
-        <p style='text-align:center;'>
-        <br>
-        <br>
-        <img src='assets/beforeafter-of-pope-announcement-shows-incredible-proliferation-of-mobile-in-just-8-years.jpg' style='height:350px' />
-        <ul>
-          <li> <bold>Mobile Phone Subscribers: </bold>6 Billion   v.s.  <bold>World Population: </bold>7 Billion</li>
-          <li> reference: NBC News</li>
-        </ul>
-      </section> 
-    </div>  
-    <div class="slide" id="phone-more-than-partner"> 
-      <header><h1>We spend more time looking at our phone than our partner</h1></header>
-      <section> 
-        <p style='text-align:center;'>
-        <br>
-        <br>
-        <img src='assets/lookAtPhone.jpg' style='height:250px' />&nbsp;&nbsp;&nbsp;v.s.&nbsp;&nbsp;&nbsp;<img src='assets/lookAtPartner.jpg' style='height:250px'/>
-        <br>2.5 hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.5 hours&nbsp;&nbsp;
-        <ul>
-          <li> reference: <a href="http://www.dailymail.co.uk/sciencetech/article-2333261/We-spend-MORE-time-phones-partner.html">dailymail.co.uk</a></li>
-        </ul>
-      </section> 
-    </div>  
+        <p style='text-align: center; float: left; display: inline; width: 50%;'>
+        	<img src='assets/beforeafter-of-pope-announcement-shows-incredible-proliferation-of-mobile-in-just-8-years.jpg' style='height:350px' />
+        </p>
+        <div style='display: inline; float: right; max-width: 50%;'>
+	        <ul>
+	          <li> <bold>Mobile-Celullar Subscriptions: </bold>6.8 Billion  v.s.  <bold>World Population:</bold>7.1 Billion</li>
+	          <li>2.1 Billion Mobile Broadband subscriptions </li>
+	          <li> <bold>Mobile Phone Subscribers in Canada: </bold>27,581,688  v.s.  <bold>Canadian Population:</bold>34.88 million</li>
+	        </ul>
+        </div>
+        <div style="float:left">
+		  Reference:<br>
+		  Telecommunication Development Sector (<a href="http://www.itu.int/en/ITU-D/Statistics/Documents/facts/ICTFactsFigures2013-e.pdf">ITU-D</a>)<br>
+		  The Canadian Wireless Telecommunications Association (CWTA)
+		</div>
+      </section>
+    </div>
     <div class='slide' id='design-for-mobile'>
       <style>
         #design-for-mobile {
@@ -160,23 +155,22 @@
         <p style='text-align:center;'>
         <img src='assets/desktop.jpg' style='height:300px' />&nbsp;&nbsp;&nbsp;v.s.&nbsp;&nbsp;&nbsp;<img src='assets/iphone.jpg' style='height:100px'/>
         <ul>
-          <li>Device - how you use it, device capabilities</li>
-          <li>Time - amount of time you have</li>
-          <li>Goal - want to accomplish </li>
-          <li>Location - where you'e using it</li>
-          <li>Attitude - state of mind you're in</li>
+          <li>Screen Size</li>
+          <li>User interaction</li>
+          <li>Content</li>
+          <li>Device Capabilities</li>
         </ul>
       </section> 
     </div>   
 
     <div class='slide exercise' id='ex1-mobile-experience'>
-      <header><h1>Exercise #1 - Mobile Experience</h1></header>
+      <header><h1>Exercise #2 - Mobile Experience</h1></header>
       <section>
         <div style='margin:0 auto; text-align:center;'>
-      <img src='assets/theloop_desktop.png' style='height:320px' />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='assets/theloop_mobile.png' style='height:320px' />
-    </div>
+			<img src='assets/theloop_desktop.png' style='height:320px' />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='assets/theloop_mobile.png' style='height:320px' />
+		</div>
       <ul>
-        <li><a href='http://www.theloop.ca'>www.theloop.ca</a> vs <a href='http://m.theloop.ca'>m.theloop.ca</a></li>
+        <li>Open <a href='http://www.theloop.ca'>www.theloop.ca</a> in your browser and <a href='http://m.theloop.ca'>m.theloop.ca</a> on your device</li>
         <li>What are the differences in user experience?</li>
         <li>What do you notice about navigation, content, and images?</li>
         <li>What about the flow of the website?</li>
@@ -196,7 +190,7 @@
         <p>Try out some others!</p>
         <ul>
           <li><a href='http://m.facebook.com'>m.facebook.com</a></li>
-          <li><a href='http://cbc.ca'>CBC.ca</a></li>
+          <li><a href='http://www.cbc.ca/m/info.html'>m.CBC.ca</a></li>
         </ul>
         <p>Inversely, try visiting <a href='http://m.facebook.com'>m.facebook.com</a> on your laptop and see what happens. Looks funny on the desktop!</p>
       </section>
@@ -247,8 +241,7 @@
         <p>Combinations produce <em>web apps</em></p>
         <p>Designed to run on low-powered devices</p>
         <p>No official distribution channel for all HTML5 apps</p>
-        <p>PhoneGap and Appcelerator - can wrap up an HTML5 app for native distribution</p>
-        <p>Mobile website -> App experience</p>
+        <p><a href="http://phonegap.com/">PhoneGap</a> and <a href="http://www.appcelerator.com/">Appcelerator</a> - can wrap up an HTML5 app for native distribution</p>
       </section>
     </div>
     
@@ -296,7 +289,7 @@
     </div>
     
     <div class='slide' id='ex2-preamble'>
-      <header><h1>Exercise #2</h1></header>
+      <header><h1>Exercise #3</h1></header>
       <section>
         <p>Let's practice uploading our website, and viewing it on the device!</p>
         <p>Get out the FTP client and connect with the information provided</p>
@@ -308,7 +301,7 @@
     </div>
     
     <div class='slide' id='ex2-preamble-upload'>
-      <header><h1>Exercise #2</h1></header>
+      <header><h1>Exercise #3</h1></header>
       <section>
         <ol>
           <li>Drag'n'Drop or select the files to upload (from the Ladies Learning Code package you got)</li>
@@ -333,7 +326,7 @@
     </div>
   
     <div class='slide' id='ex3-homescreen_Android'>
-      <header><h1>Ex #2 continued - Old Android</h1></header>
+      <header><h1>Ex #3 continued - Old Android</h1></header>
       <section>
         <ol>
           <li>Tap on the menu button on the device. Select 'Add bookmark'</li>
@@ -346,7 +339,7 @@
     </div>
     
     <div class='slide' id='ex3-homescreen_BB'>
-      <header><h1>Ex #2 continued - BlackBerry</h1></header>
+      <header><h1>Ex #3 continued - BlackBerry</h1></header>
       <section>
         <ol>
           <li>Click on BlackBerry menu button.</li>
@@ -412,7 +405,7 @@
     </div>
     
     <div class='slide' id='ex3-support'>
-      <header><h1>Exercise #3 - What device am I?</h1></header>
+      <header><h1>Exercise #4 - What device am I?</h1></header>
       <section>
         <p>We will open a page on both our laptops and the devices. The page will display different things based on the screen width.</p>
         <p>For this exercise, we've also included code for tablets -- if you happen to have one here.</p>
@@ -454,7 +447,7 @@
           line-height:50px;
         }
       </style>
-      <header><h1>Exercise #4 - Activate the Mobile CSS</h1></header>
+      <header><h1>Exercise #5 - Activate the Mobile CSS</h1></header>
       <section>
         <p>The part you've been waiting for! Time to use our knowledge of CSS Media Queries and activate the Mobile CSS.</p>
         <h3>mobile.css</h3>
@@ -467,7 +460,7 @@
     </div>
     
     <div class='slide' id='ex5-desktop'>
-      <header>Ex #4 - Change the Desktop Version</header>
+      <header>Ex #5 - Change the Desktop Version</header>
       <section>
         <p>We're also going to modify the part above for the <code>desktop.css</code> file</p>
         <p>Change that line to:</p>
@@ -504,7 +497,7 @@
     </div>
     
     <div class='slide' id='ex6-designing-for-small-screens'>
-      <header><h1>Excerise #5 - What matters most?</h1></header>
+      <header><h1>Excerise #6 - What matters most?</h1></header>
       <section>
         <p>Let's discuss the focus of the site should be, when looking at it for the first time on a small screen</p>
         <ul>
@@ -664,7 +657,7 @@ p.purple {
     </div>
     
     <div class='slide' id='ex7-screen-sizes'>
-      <header><h1>Ex #6: Mobile Friendly Images</h1></header>
+      <header><h1>Ex #7: Mobile Friendly Images</h1></header>
       <section>
         <h3>We can adjust large images that are part of the layout easily if we use the stylesheet to put them on our site</h3>
         <ol>
@@ -722,7 +715,7 @@ p.purple {
         </section>
     </div>
     <div class='slide' id='ex7-linearize'>
-      <header><h1>Exercise #7 - Down to one column</h1></header>
+      <header><h1>Exercise #8 - Down to one column</h1></header>
       <section>
         <p style='text-align:center;'>In mobile.css, we need to tackle <code>.container</code>, <code>.content</code>, and <code>.sidebar</code>, 
           <br>  <img src='assets/websitestructure2.png' style='height:600px'/>
@@ -731,7 +724,7 @@ p.purple {
       </section>
     </div>
     <div class='slide' id='ex7-cont'>
-      <header><h1>Exercise #7 - Down to one column</h1></header>
+      <header><h1>Exercise #8 - Down to one column</h1></header>
       <section>
         <p>The <code>.container</code> section in the CSS has fixed width.</p>
         <p>It would still cause our layout to stretch to 960px</p>
@@ -742,7 +735,7 @@ p.purple {
       </section>
     </div>
     <div class='slide' id='ex7-linearize2'>
-      <header><h1>Exercise #7 - Down to one column</h1></header>
+      <header><h1>Exercise #8 - Down to one column</h1></header>
       <section>
         <p>Using <code>width</code>s doesn't really make sense here either, as we want to fill the screen as much as possible.</p>
         <h3>Remove <code>width:</code> and <code>float:</code> (or float:none;)</h3>
